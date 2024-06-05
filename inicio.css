@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1%;
+    padding: 1%;
+    justify-content: space-between;
+}
+
+.navigation1 {
+    display: flex;
+    justify-content: space-evenly;
+    height: 37rem;
+    padding: 5px;
+    background:
+        linear-gradient(rgba(8, 11, 21,0.7),
+            rgba(12, 14, 20, 0.5),
+            rgba(14, 15, 19, 0.52),
+            rgba(15, 16, 19, 0.8),
+            rgba(13, 18, 30, 0.95),
+            rgba(13, 18, 30, 1)
+        ),
+        url('carrusel01.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.logo-container {
+    max-width: 150px;
+    margin-left: 6%;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+.nav-links {
+    width: 48rem;
+    display: flex;
+    justify-content: center;
+    margin-right: 3.5%;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.nav-links ul li {
+    display: inline;
+    margin-right: 14px;
+    font-weight: bold;
+}
+
+.nav-links ul li:last-child {
+    margin-right: 0;
+}
+
+.nav-links ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 0.90rem;
+}
+
+/* Media Queries */
+
+/* Estilos para pantallas menores a 768px (celulares) */
+@media only screen and (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .logo-container {
+        margin-left: 0;
+        max-width: 100px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: flex-start;
+        padding-left: 1rem;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .nav-links ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav-links ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    .navigation1 {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+}
+
+/* Estilos para pantallas menores a 1024px */
+@media only screen and (max-width: 1023px) {
+    .navigation1 {
+        height: 37rem;
+    }
+}
+
+/* Estilo para pantallas de laptops pequeñas (1024px a 1317px) */
+@media only screen and (min-width: 1024px) and (max-width: 1317px) {
+    .navigation1 {
+        height: 38.5rem;
+    }
+}
+
+/* Estilo para pantallas de laptops medianas (1318px a 1440px) */
+@media only screen and (min-width: 1318px) and (max-width: 1440px) {
+    .navigation1 {
+        height: 40.5rem;
+    }
+}
+
+/* Estilo para pantallas de laptops grandes (1441px a 1600px) */
+@media only screen and (min-width: 1441px) and (max-width: 1600px) {
+    .navigation1 {
+        height: 45rem;
+    }
+}
+
+/* Estilo para pantallas de PC estándar (1601px a 1920px) */
+@media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    .navigation1 {
+        height: 50rem;
+    }
+}
+
+/* Estilo para pantallas de PC grandes (más de 1920px) */
+@media only screen and (min-width: 1921px) {
+    .navigation1 {
+        height: 61rem;
+    }
+}
+
+
+
+
+.infor {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.mobiles {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.fas {
+    font-size: 25px;
+    border-radius: 50%;
+    border: 1px solid #808080;
+    padding: 5px;
+}
+
+.informacion {
+    line-height: 0px;
+    margin-left: -14px;
+}
+
+.informacion h4 {
+    color: #DBAD1F;
+}
+
+.informacion h5 {
+    color: #DBAD1F;
+}
+
+.navigation2 {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    height: 70px;
+    justify-content: space-around;
+}
+
+
+
+
+
+.buttons button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #ffffff;
+    color: black;
+}
